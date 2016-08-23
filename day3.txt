@@ -1,0 +1,47 @@
+Day Three
+
+-----
+
+(Review day two, 10 mins)
+
+(Lecture, 10 mins)
+Backbone Collections
+ - Models : Collection :: Database rows : tables
+ - Extend/initialize
+ - Fetch/set/reset
+ - Add/remove/get
+ - Push/pop/shift/unshift
+
+(Lab, 60 mins)
+ - Change server-side logic to support multiple models
+ - Modify existing tests as necessary; add new
+ - Add client-side Collections
+ - Add/modify tests
+
+(break, 10 mins) 
+
+(Lab, 90 mins)
+ - Continue Collections expansions
+
+(lunch, 60 mins)
+
+(Lecture, 10 mins)
+Backbone Routing
+ - General concept
+ - Url hash fragments versus browser History API
+ - params & splats
+ - Controlling history via navigate()
+
+(Lab, 90 mins) 
+ - Dynamically load collections based on routes
+ - Write tests
+
+(Break, 15 mins)
+
+(Discussion/Q&A, 10 mins)
+ - What worked, what didn't
+ 
+(Lab, 90 mins)
+ - Continue with routes
+
+

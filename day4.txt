@@ -1,0 +1,42 @@
+Day Four
+
+-----
+
+(Review day three, 10 mins)
+
+(Lecture, 10 mins)
+Marionette Overview
+ - Extend Backbone behavior at a higher level
+ - ItemView & CollectionView most common
+ - Eliminate common boilerplate like render
+
+(Lab, 60 mins)
+ - npm install Marionette
+ - Define regions
+ - Modify input to choose from CollectionView
+ - Write tests
+
+(break, 10 mins) 
+
+(Lab, 90 mins)
+ - Continue Marionette conversion
+
+(lunch, 60 mins)
+
+(Lecture, 10 mins)
+React Architecture
+ - Virtual DOM
+ - Component based architecture
+ - Component lifecycle: mount, state, props 
+ - JSX
+
+(Lab, 90 mins)
+ - Create React views
+ - Pass Backbone models into props
+ - Write tests
+
+(break, 15 mins)
+
+(buffer/Q&A, 90 mins)
+
+(Wrap up, 30 mins)

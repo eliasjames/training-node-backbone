@@ -1,0 +1,92 @@
+Day One
+
+(Prerequisite)
+ - Students' machines should have node/npm installed.
+
+-----
+
+(Get started, 20 mins)
+ - Introductions & icebreakers
+ - Course guidelines & housekeeping
+ - Course material expectations
+ - Review outline
+
+(Lecture, 20 mins)
+Node in a Nutshell
+ - Brief intro & history
+ - npm: install workflow
+ - package.json
+
+(Code-along, 20 mins)
+Explore the Node REPL
+
+(Lab, 30 mins)
+ - build a package.json  
+ - Pipe "hello world" to asciify
+
+(break, 15 mins)
+
+(Lecture, 20 mins)
+Dive into Node code
+ - Node architecture
+ - Intro to event driven/callback oriented code  
+ - Common JS module syntax
+ - The built-in server
+
+(Code-along, 20 mins)
+ - Run the built-in server in debug mode
+ - Examine the HTTP request & response
+ - Write a basic response
+
+(Lecture, 20 mins)
+Hapi Overview
+ - What is Hapi for? Brief descriptions of...
+ - Authentication
+ - Cookies
+ - Caching
+ - Logging
+ - Routing & Views
+A word about testing habits 
+ - Opinions on TDD can get religious, but...
+ - 'Test First' can be rephrased 'Test As You Go'
+ - Many benefits to 'TAYGO'
+ - 'Test last' too often means 'test never'
+ - After basic Hapi config, we'll 'TAYGO'
+
+(Code-along, 30 mins)
+ - npm install hapi
+ - Basic Hapi config 
+
+(lunch, 1 hour)
+
+(Code-along, 60 mins)
+ - npm install karma, jasmine, watch
+ - Write a "hello world" level test
+ - configure tests to autorun when files change
+
+(break, 5 mins)
+
+(Lecture, 20 mins)
+Routing & Views
+ - Routes overview
+ - Matching RESTful paths
+ - Validation, auth and more via config
+Using Handlebars for Views
+ - Configure Hapi's templating support
+ - Handlebars syntax
+ - Block expressions
+ - Helpers
+ - Partials
+Hapi Services
+ - What are Services?
+ - Hapi Services API
+
+(Lab, 120 mins)
+ - Create a function to share business logic among routes
+ - Write tests
+ - Create a simple GET route and a view
+ - Write a test
+ - Create two POST routes and responses/redirects
+ - Write tests
+
+(buffer/free time, 30 mins)

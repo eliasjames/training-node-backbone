@@ -1,0 +1,53 @@
+Objective: create a control system for an elevator
+
+Requirement: test coverage
+
+Components:
+Server
+ - Stores config like # of floors, # of elevators, etc
+ - Manages the elevator dispatch queue
+ - Stores elevator state
+Floor Call button
+ - Submits a requests to elevator dispatch
+ - Parameters
+   - floor number
+   - direction
+ - Stays "lit" until served
+Client - Elevator widget
+ - Listens to dispatch messages and responds appropriately
+ - Aware of its pending stops/direction and current floor #
+ - Accepts floor number input (or times out)
+ - Validates floor number input
+ - On valid input, begins moving towards floor
+
+Implementation
+MVP
+ - Server sends static HTML 
+ - Floors dynamically generated with call buttons
+ - Call button POSTs to elevator dispatch
+ - One floor displays elevator 
+ - Elevator displays whether moving or stopped
+ - When stopped, elevator accepts input 
+ - Input POSTs to elevator dispatch
+ - Manually refresh page for updates
+
+Simple SPA
+ - Server sends HTML with floors, buttons
+ - Convert buttons to ajax POST
+ - Elevator widget 
+    - Fetches dispatch data
+    - Renders itself to the page
+    - Handles DOM represenatation of travel
+    - Validates input when stopped
+
+Extensible SPA
+ - Support multiple elevators via Collection
+
+Routable SPA
+ - Dynamically load elevator position at page load
+
+Marionette Demo
+ - Replace floor number input with building directory
+
+React Demo
+ - Substitute Backbone View with React 
