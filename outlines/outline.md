@@ -1,46 +1,49 @@
 Session Objectives
 
-• Build RESTful web services using Node
+- Build RESTful web services using Node and Express
 
-• Develop Single page based applications
+- Develop Single page based applications using Backbone
 
-• Effectively test front-end and back-end application code
+- Effectively test front-end and back-end application code
 
-• Utilize JavaScript libraries to create web applications
+- Utilize JavaScript libraries to create web applications
 
-Day 1
+Day One
 
-1.1. Node in a Nutshell
+- Node in a Nutshell
 
-1.2. Introduction to Hapi
+- Creating Node Modules 
 
-1.3. Jasmine2 Unit Testing the Server
+- NPM and the Node community
 
-1.4. Hapi Services, Routing & Views
+- Introduction to Express
 
-Day 2
+Day Two
 
-2.1. Socket.IO
+- Express Error Handling
 
-2.2. Intro to Backbone & Underscore
+- Express Routing & Views
 
-2.3. Backbone Models & Views
+- Integrating CORS with Express
 
-2.4. Backbone with Handlebars
+- Building RESTful API with Express
 
-Day 3
+Day Three
 
-3.1. Backbone Collections
+- Backbone Models & Views
 
-3.2. Backbone Routing
+- Backbone with Underscore & Handlebars
 
+- Backbone Collections
 
-Day 4
+- Backbone Routing
 
-4.1. Marionette Architecture
+Day Four
 
-4.2. Marionette Views
+- HTML5 Forms and Form Validation
 
-4.3. React Architecture
+- Jasmine2 Unit Testing the FrontOend
 
-4.4. Backbone Models with React Views
+- Jasmine2 Unit Testing the BackOend
+
+- Karma
