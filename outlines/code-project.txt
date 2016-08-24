@@ -45,9 +45,3 @@ Extensible SPA
 
 Routable SPA
  - Dynamically load elevator position at page load
-
-Marionette Demo
- - Replace floor number input with building directory
-
-React Demo
- - Substitute Backbone View with React 
