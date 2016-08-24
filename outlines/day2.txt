@@ -4,65 +4,44 @@ Day Two
 
 (Review day one, 10 mins)
 
-(Lecture, 10 mins)
-Socket.IO
- - Why use it?
- - Client fallback methods
- - Server side implementation
+(Lecture, 20 mins)
+Express Error Handling
+ - Function signature
+ - Fall-through design
+ - Default handler
 
 (Lab, 60 mins)
- - npm install
- - Code server side implementation
- - Write tests
- - Client side implementation
+ - Write error handlers
+ - Explore effective error handling structure
 
-(break, 10 mins) 
+(break, 15 mins)
 
-(Lecture, 30 mins)
-Backbone overview
- - Principles of SPAs
- - Event driven architecture
- - Backbone Dependencies
- - A word about script loaders
-Intro to underscore
- - Functionally oriented paradigm
- - Review 'this' keyword
- - List comprehensions & map/reduce 
- - Alternative OOP/jQuery chaining syntax 
- - Utility methods
-Backbone Models
- - Concepts & structure
- - Syntax in common practice: extend() vs. new
- - Initialize/defaults
- - Get/set/unset/has
- - Fetch/parse/save/sync
+(Lecture, 10 mins)
+Express Views
+ - Template engines
+ - Mustache syntax
 
-(Code-along, 60 mins)
- - npm install Backbone & dependencies
- - Get familiar with Underscore & functional orientation
- - Brief exploration of Backbone Events on a POJO
- - Dive into Backbone Model
+(Lab, 60 mins)
+ - Update routes to use templates
 
 (lunch, 60 mins)
 
 (Lecture, 10 mins)
-Backbone Views
- - Views are really MVC Controllers
- - Listen to model events and render templates
- - Extend/initialize
- - el versus $el
- - Handlebars templates
+CORS
+ - Background
+ - Solution
 
-(Lab, 2 hours)
- - Convert server-side static page to SPA
- - Make client-side directory
- - Add Backbone models, views
- - Set up client side tools (gulp, karma, jasmine, watch)
- - Write tests
+(Lab, 90 mins)
+ - Set up client-side AJAX call
+ - Implement CORS headers server-side
 
 (break, 15 mins)
 
-(Discussion/Q&A, 10 mins)
+(Lecture, 10 mins)
+RESTful APIs
 
 (Lab, 90 mins)
- - Continue SPA conversion
+ - Implement a RESTful API server-side
+
+(Buffer/Exploration time, 30 mins)
+

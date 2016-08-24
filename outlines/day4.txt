@@ -4,39 +4,55 @@ Day Four
 
 (Review day three, 10 mins)
 
-(Lecture, 10 mins)
-Marionette Overview
- - Extend Backbone behavior at a higher level
- - ItemView & CollectionView most common
- - Eliminate common boilerplate like render
-
-(Lab, 60 mins)
- - npm install Marionette
- - Define regions
- - Modify input to choose from CollectionView
- - Write tests
-
-(break, 10 mins) 
+(Lecture, 20 mins)
+HTML5 Forms and Validation
+ - Quick quiz on HTML forms
+ - What is HTML5?
+ - New input types
+ - Validation attributes 
+ - New API
+ - CSS3 
 
 (Lab, 90 mins)
- - Continue Marionette conversion
+ - Explore HTML5 forms
+
+(break, 15 mins) 
+
+(Lab, 60 mins)
+ - Connect form to server
 
 (lunch, 60 mins)
 
 (Lecture, 10 mins)
-React Architecture
- - Virtual DOM
- - Component based architecture
- - Component lifecycle: mount, state, props 
- - JSX
+Jasmine
+ - Syntax 
+ - What makes a good test?
 
-(Lab, 90 mins)
- - Create React views
- - Pass Backbone models into props
- - Write tests
+(Lab, 20 mins)
+ - Explore Jasmine
+
+(Lecture, 10 mins)
+Karma
+ - Test runner concept
+ - Karma specifics
+
+(Lab, 30 mins)
+ - Set up Karma server side
+ - Write tests & automate
 
 (break, 15 mins)
 
-(buffer/Q&A, 90 mins)
+(Lab, 30 mins)
+ - Set up Karma client side
+ - Write tests
 
-(Wrap up, 30 mins)
+(break, 10 mins)
+
+(Discussion/Q&A, 10 mins)
+ - What worked, what didn't?
+
+(Lab, 30 mins)
+ - Continue testing
+
+(Wrap up, 15 mins)
+

@@ -4,6 +4,59 @@ Day Three
 
 (Review day two, 10 mins)
 
+(Lecture, 30 mins)
+Backbone overview
+ - Principles of SPAs
+ - Event driven architecture
+ - Backbone Dependencies
+ - A word about script loaders
+Intro to underscore
+ - Functionally oriented paradigm
+ - Review 'this' keyword
+ - List comprehensions & map/reduce 
+ - Alternative OOP/jQuery chaining syntax 
+ - Utility methods
+Backbone Models
+ - Concepts & structure
+ - Syntax in common practice: extend() vs. new
+ - Initialize/defaults
+ - Get/set/unset/has
+ - Fetch/parse/save/sync
+
+(Code-along, 60 mins)
+ - npm install Backbone & dependencies
+ - Get familiar with Underscore & functional orientation
+ - Brief exploration of Backbone Events on a POJO
+ - Basic Backbone Model
+
+(break, 15 mins)
+
+(Lecture, 10 mins)
+Backbone Views
+ - Views are really MVC Controllers
+ - Listen to model events and render templates
+ - Extend/initialize
+ - el versus $el
+Handlebars templates
+ - Handlebars syntax
+ - Block expressions
+ - Helpers
+ - Partials
+
+(Lab, 60 mins)
+ - Convert server-side static page to SPA
+ - Make client-side directory
+ - Add Backbone models, views
+
+(lunch, 60 mins)
+
+(Discussion/Q&A, 10 mins)
+
+(Lab, 90 mins)
+ - Continue SPA conversion
+
+(break, 10 mins) 
+
 (Lecture, 10 mins)
 Backbone Collections
  - Models : Collection :: Database rows : tables
@@ -14,16 +67,9 @@ Backbone Collections
 
 (Lab, 60 mins)
  - Change server-side logic to support multiple models
- - Modify existing tests as necessary; add new
  - Add client-side Collections
- - Add/modify tests
 
-(break, 10 mins) 
-
-(Lab, 90 mins)
- - Continue Collections expansions
-
-(lunch, 60 mins)
+(break, 10 mins)
 
 (Lecture, 10 mins)
 Backbone Routing
@@ -32,16 +78,6 @@ Backbone Routing
  - params & splats
  - Controlling history via navigate()
 
-(Lab, 90 mins) 
+(Lab, 30 mins) 
  - Dynamically load collections based on routes
  - Write tests
-
-(Break, 15 mins)
-
-(Discussion/Q&A, 10 mins)
- - What worked, what didn't
- 
-(Lab, 90 mins)
- - Continue with routes
-
-
