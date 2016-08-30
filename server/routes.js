@@ -9,7 +9,13 @@ module.exports = function (app, appEnv) {
   });
 
   app.post('/fs/:filename/write', function ( req, res, next ) {
-    appEnv.fs.writeFile(req.params.filename, req.body.writedata);
-    res.send('posted');
+    // use regEx to test for bad chars
+    var myRegEx = /;/;
+    if ( myRegEx.exec( req.body.writedata ) ) {
+      next( { message: 'Invalid chars in writedata' } );
+    } else {
+      appEnv.fs.writeFile(req.params.filename, req.body.writedata);
+      res.send('posted');
+    }
   });
 }
