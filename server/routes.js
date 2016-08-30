@@ -18,4 +18,9 @@ module.exports = function (app, appEnv) {
       res.send('posted');
     }
   });
+
+  var usersArray = ['Dick', 'Jane', 'Spot'];
+  app.get('/users/:userId', function ( req, res, next ) {
+    res.render('getUser', { userName: usersArray[req.params.userId] });
+  });
 }

@@ -9,6 +9,8 @@ var appEnv = {
   bp: bp
 };
 
+app.set('view engine', 'hbs');
+
 require('./routes')(app, appEnv);
 require('./errorHandling')(app, appEnv);
 
