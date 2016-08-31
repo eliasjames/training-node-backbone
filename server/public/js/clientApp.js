@@ -24,9 +24,10 @@ app.usersView = Backbone.View.extend({
 });
 app.uV = new app.usersView();
 
-app.usersCollection = Backbone.Collection.extend({});
+// simplfying example
+// app.usersCollection = Backbone.Collection.extend({});
 
-app.uC = new app.usersCollection();
+app.uC = new Backbone.Collection();
 app.uC.url = '/users';
 app.uC.on( 'add', function( model ) {
   app.uV.addOne( model );
