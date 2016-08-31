@@ -2,7 +2,7 @@ module.exports = function (app, appEnv) {
   app.use( appEnv.bp.urlencoded() );
 
   app.get('/', function ( req, res, next ) {
-    appEnv.fs.readFile('cors.html', 'utf8', function (err, data) {
+    appEnv.fs.readFile('index-cors.html', 'utf8', function (err, data) {
       if ( err ) { next( err ); }
       res.send( data );
     });

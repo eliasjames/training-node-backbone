@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
 });
 
 require('./routes-cors')(app, appEnv);
-require('./errorHandling')(app, appEnv);
+require('./errorHandling-cors')(app, appEnv);
 
 app.listen(9000, function() {
   console.log(new Date());
