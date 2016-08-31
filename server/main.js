@@ -18,6 +18,9 @@ app.use(function(req, res, next) {
 });
 
 require('./routes')(app, appEnv);
+require('./users')(app, appEnv);
+require('./items')(app, appEnv);
+require('./bag')(app, appEnv);
 require('./errorHandling')(app, appEnv);
 
 app.listen(8080, function() {
