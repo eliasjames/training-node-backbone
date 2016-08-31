@@ -11,6 +11,7 @@ var appEnv = {
 
 app.set('view engine', 'hbs');
 
+app.use(exp.static('node_modules'));
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
