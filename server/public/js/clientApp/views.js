@@ -9,8 +9,8 @@ app.userView = Backbone.View.extend({
     // two way data binding: set model data as user types
     this.$el.html(
       _.template( templateString )( { name: this.model.get( 'name' ) })
-    ).children('li').children('input').focus();
-    this.$el.children('li').children('input').on('keyup', function (e) {
+    ).children('input').focus();
+    this.$el.children('input').on('keyup', function (e) {
       that.model.set({ name: this.value });
     });
 
