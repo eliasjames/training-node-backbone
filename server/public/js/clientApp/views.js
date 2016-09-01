@@ -1,9 +1,10 @@
 var app = app || {};
 
 app.userView = Backbone.View.extend({
+  tagName: 'li',
   render: function() {
     var that = this;
-    var templateString = '<li><%= name %>&nbsp;<input type="text" value="<%= name %>"></input></li>';
+    var templateString = '<%= name %>&nbsp;<input type="text" value="<%= name %>"></input>';
 
     // two way data binding: set model data as user types
     this.$el.html(
