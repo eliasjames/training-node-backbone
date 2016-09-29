@@ -10,7 +10,7 @@ module.exports = function (app, appEnv) {
       associateNumber: 54321
     },
     {
-      name: 'Sherri',
+      name: 'Sherry',
       associateNumber: 67675
     }
   ];

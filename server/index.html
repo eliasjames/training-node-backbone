@@ -4,10 +4,18 @@
     <script src="/underscore/underscore-min.js"></script>
     <script src="/backbone/backbone-min.js"></script>
     <script src="/backbone/backbone-min.js"></script>
+    <script src="/handlebars/dist/handlebars.min.js"></script>
   </head>
   <body>
     <div id="users-container">
       <h1>Users</h1>
+      <script id="PersonTemplate" type="text/x-handlebars-template">
+        <div>
+{{> userMessage tagName="h1" }}
+           {{attributes.name}}
+           {{attributes.associateNumber}}
+        <div>
+      </script>
       <ul id="users-list"></ul>
     </div>
   </body>

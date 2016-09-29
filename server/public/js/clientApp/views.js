@@ -4,14 +4,17 @@ app.userView = Backbone.View.extend({
   tagName: 'li',
   render: function() {
     var that = this;
-    var templateString = '<%= name %>&nbsp;<input type="text" value="<%= name %>"></input>';
+//    var templateString = '<%= name %>&nbsp;<input type="text" value="<%= name %>"></input>';
 
     // two way data binding: set model data as user types
+    var template = Handlebars.compile( $('#PersonTemplate').html())
+Handlebars.registerPartial('userMessage','<{{tagName}}>By {{author.firstName}} {{author.lastName}}</{{tagName}}><div class="body">{{body}}</div>');
     this.$el.html(
-      _.template( templateString )( { name: this.model.get( 'name' ) })
+//      _.template( templateString )( { name: this.model.get( 'name' ) })
+      template( this.model )
     ).children('input').focus();
     this.$el.children('input').on('keyup', function (e) {
-      that.model.set({ name: this.value });
+      that.model.set({ name: this.value }).save();
     });
 
     return this;
