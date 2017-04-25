@@ -33,7 +33,14 @@ server.register( require( 'inert' ), ( err )=>{
         `./chat-files/${ request.payload.genre }.txt`,
         request.payload.message,
         'utf8',
-        ()=>{ console.log( 'POST appended' ); }
+        ( err, data )=>{
+          if (!err) {
+            console.log( 'POST appended' );
+            reply( 'POST appended' );
+          } else {
+            reply( 'appendFile errored' );
+          }
+        }
       );
     }
   });
