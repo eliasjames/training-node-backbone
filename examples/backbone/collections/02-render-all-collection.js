@@ -1,1 +1,4 @@
-let chatMessageCollection = new Backbone.Collection();
+const ChatMessageCollection = Backbone.Collection.extend({
+  model: ChatMessageModel
+});
+let chatMessageCollection = new ChatMessageCollection();
