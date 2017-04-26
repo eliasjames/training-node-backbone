@@ -1,5 +1,5 @@
 const OrderedView = Backbone.View.extend({
-  tagname: 'li',
+  tagName: 'li',
   initialize() {
     this.listenTo( this.model, 'change', this.render )
   },
