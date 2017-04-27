@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Basic Views</title>
+  <meta name="description" content="Basic Backbone">
+  <meta name="author" content="Elias Carlston">
+
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/underscore/underscore.js"></script>
+  <script src="./node_modules/backbone/backbone.js"></script>
+  <script src="./01-routing-model.js"></script>
+  <script src="./01-routing-one-view.js"></script>
+  <script src="./01-routing-multi-view.js"></script>
+	<script src="./01-routing-collection.js"></script>
+	<script src="./01-routing-router.js"></script>
+  <script>
+    let myCollectionView = new ChatMessageCollectionView({
+      collection: chatMessageCollection
+    });
+  </script>
+	<script id="chat-message-template" type="text/x-handlebars-template">
+			<li>
+        User: {{ user }} Message: {{ message }} 
+			</li>
+	</script>
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <h1>Hapi</h1>
+  <ul id="message-area">
+    <li>Server must be running first: 'node 01-routing-server.js'.</li>
+    <li>Then open <a href="http://localhost:3000">http://localhost:3000</a></li>
+    <li>Route link:<a href="http://localhost:3000/#about">http://localhost:3000/#about</a></li>
+    <li>Route link:<a href="http://localhost:3000/#chat/rock">http://localhost:3000/#chat/rock</a></li>
+    <li>Route link:<a href="http://localhost:3000/#chat/jazz">http://localhost:3000/#chat/jazz</a></li>
+  </ul>
+  <ul class="chat-messages">
+  </ul>
+</body>
+</html>
