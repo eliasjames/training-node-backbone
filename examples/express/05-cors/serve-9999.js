@@ -2,6 +2,14 @@ var Exp = require( 'express' );
 var app = new Exp();
 var bP = require( 'body-parser' );
 
+// uncomment to resolve CORS / Same Origin error
+//app.use( function( req, res, next ) {
+//  console.log( 'ACAO headers' );
+//  res.header( "Access-Control-Allow-Origin", "*" );
+//  res.header( "Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept" );
+//  next();
+//} );
+
 app.use( bP.urlencoded() );
 
 app.get( '/player/:id', function( req, rsp ) {
