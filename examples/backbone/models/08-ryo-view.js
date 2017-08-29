@@ -1,9 +1,12 @@
 const Ordered = Backbone.Model.extend({
   initialize() {
     // initialize is where to bind instance events
+    this.p = document.createElement( 'p' );
     this.on( 'change', ()=>{
       this.validate( this.attributes );
-      this.writeToPage();
+      if ( this.msg ) {
+        this.writeToPage();
+      }
     });
     // in reality, probably want to validate here as well
     // omitting for example purposes
@@ -15,18 +18,14 @@ const Ordered = Backbone.Model.extend({
     }
   },
   writeToPage() {
-    let msg = document.getElementById( 'message-area' );
-    if ( msg ) {
-      let p = document.createElement( 'p' );
-      p.append( document.createTextNode(
-          `start: ${ myModel.get( 'start' ) };
-          end:  ${ myModel.get( 'end' ) }`
-        )
-      );
-      msg.append( p );
-    } else {
-      console.log( 'no message area' );
-    }
+    let textnode = document.createTextNode(
+      `first: ${ myModel.get( 'start' ) };
+      last:  ${ myModel.get( 'end' ) }
+      valid:  ${ myModel.isValid() }`
+    );
+    //console.log( 'textnode', textnode );
+    this.p.innerHTML = textnode.nodeValue;
+    this.msg.innerHTML = myModel.p.innerHTML;
   }
 });
 
@@ -38,6 +37,9 @@ let myModel = new Ordered({
 myModel.set( 'end', 10 );
 
 window.addEventListener( 'DOMContentLoaded', ()=>{
-  myModel.set( 'end', 20 );
-  myModel.writeToPage();
+  let msg = document.getElementById( 'message-area' );
+  if ( msg ) {
+    myModel.msg = msg;
+    myModel.writeToPage();
+  }
 });
