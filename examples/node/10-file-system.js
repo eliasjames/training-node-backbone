@@ -20,7 +20,17 @@ module.exports = function( options ) {
       FS.writeFile( subject, content, ()=>{
         console.log( 'written' );
       });
+    },
+    writeChatSubDir( subject, content ) {
+      FS.mkdir( 'chats', ( err )=>{
+        if ( !err ) {
+          FS.writeFile( subject, content, ()=>{
+            console.log( 'written' );
+          });
+        }
+      });
     }
+
   };
 
   return returnObject;
