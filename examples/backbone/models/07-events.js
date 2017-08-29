@@ -9,6 +9,7 @@ const Ordered = Backbone.Model.extend({
     // this.validate( this.attributes );
   },
   validate( attrs, options ) {
+    console.log( 'validate ran' );
     if ( attrs.end < attrs.start ) {
       return "can't end before it starts";
     }
