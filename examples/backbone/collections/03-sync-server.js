@@ -37,7 +37,7 @@ server.register( require( 'inert' ), ( err )=>{
     path: '/sync',
     handler: function ( request, reply ) {
       const myMessages = [
-        { user: 'Elias', message: 'Hey hows it going' },
+        { user: 'Elias', message: 'Test' },
         { user: 'Mud', message: 'Good, you?' },
         { user: 'Elias', message: 'Good amigo!' },
         { user: 'Elias', message: 'I love chatting!' },

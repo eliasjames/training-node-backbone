@@ -3,4 +3,4 @@ const ChatMessageCollection = Backbone.Collection.extend({
   url: '/sync'
 });
 let chatMessageCollection = new ChatMessageCollection();
-chatMessageCollection.fetch();
+// chatMessageCollection.fetch();
