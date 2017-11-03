@@ -1,11 +1,6 @@
 module.exports = function(){
   var Backbone = require( 'backbone' );
   var MonopolyPlayer = Backbone.Model.extend({
-    initialize: function(){
-      this.on( 'change', function(){
-//        this.isValid();
-      });
-    },
     validate: function( attrs, opts ){
       if ( 
         !attrs.userName || 
@@ -26,7 +21,9 @@ module.exports = function(){
   }
 
   return function( options ) {
-    var requiredFields = [ 'userName', 'boardMarker' ];
+    var requiredFields = [ 'userName', 'boardMarker' ],
+      options = options || {};
+
     requiredFields.forEach( function( each ){
       if ( !options[ each ] ) {
         throw 'missing ' + each;
