@@ -1,4 +1,4 @@
-define( function( require, exports, module ) {
+define( 'view.monopoly-player', [], function( require, exports, module ) {
 	return function( attrs ) {
 		var Backbone = require( 'backbone' );
 		var TestView = Backbone.View.extend({

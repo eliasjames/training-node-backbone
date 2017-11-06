@@ -5,6 +5,6 @@ describe( 'First View', function(){
         model: new Backbone.Model( { test: true } )
       });
       expect( myView.get( 'test' )).toEqual( true );
-    });
+    }, function( err ){ console.log( 'err', err ); });
   });
 });
