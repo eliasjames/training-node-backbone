@@ -1,6 +1,5 @@
-define( 'view.monopoly-player', [], function( require, exports, module ) {
+define( 'view.monopoly-player', [ 'backbone' ], function( Backbone ) {
 	return function( attrs ) {
-		var Backbone = require( 'backbone' );
 		var TestView = Backbone.View.extend({
 			initialize: function(){
 				this.on( this.model, 'change', function(){

@@ -11,12 +11,15 @@ for (var file in window.__karma__.files) {
 }
 
 require.config({
+  baseUrl: '/base',
 	deps: specFiles,
 	callback: window.__karma__.start,
 	paths: {
-    backbone: 'node_modules/backbone/backbone.js',
-    'model.monopoly-player': './model-validation/model.monopoly-player.js',
-    'view.monopoly-player': './view.monopoly-player.js',
+    'jquery': 'node_modules/jquery/dist/jquery',
+    'underscore': 'node_modules/underscore/underscore',
+    'backbone': 'node_modules/backbone/backbone',
+    'model.monopoly-player': 'model-validation/model.monopoly-player',
+    'view.monopoly-player': 'view.monopoly-player',
   },
 	shim: {
 		'underscore': {

@@ -10,7 +10,7 @@ describe( 'Monopoly Player View', function(){
       var myView = new TestView({
         model: new TestModel( testModelAttrs )
       });
-      expect( myView.get( 'userName' )).toEqual( 'Ace76' );
+      expect( myView.model.get( 'userName' )).toEqual( 'Ace76' );
       done();
     }, function( err ){ console.log( 'err', err ); });
   });

@@ -6,10 +6,15 @@ module.exports = function(config) {
     basePath: '',
     frameworks: [ 'jasmine', 'requirejs' ],
     files: [
+      { pattern: './node_modules/jquery/dist/jquery.js', included: false },
+      { pattern: './node_modules/underscore/underscore.js', included: false },
+      { pattern: './node_modules/backbone/backbone.js', included: false },
+      { pattern: './first-view.js', included: false },
+      { pattern: './spec.first-view.js', included: false },
+      { pattern: './model-validation/model.monopoly-player.js', included: false },
+      { pattern: './view.monopoly-player.js', included: false },
+      { pattern: './spec.monopoly-player.js', included: false },
       './test-main.js',
-      './model-validation/model.monopoly-player.js',
-      './view.monopoly-player.js',
-      './spec.monopoly-player.js',
     ],
     exclude: [
     ],
