@@ -1,6 +1,6 @@
-define( 'model.monopoly.player', [], function( require, module, exports ){
+define( 'model.monopoly-player', [ 'backbone' ], function( require, module, exports, Backbone ){
   module.exports = function(){
-    var Backbone = require( 'backbone' );
+    //var Backbone = require( 'backbone' );
     var MonopolyPlayer = Backbone.Model.extend({
       validate: function( attrs, opts ){
         if ( 
