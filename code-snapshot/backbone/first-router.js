@@ -10,6 +10,9 @@ var FirstRouter = Backbone.Router.extend({
   },
   myFilter: function( filterValue ){
     console.log( 'filter', filterValue );
+    $( '.router-content' ).html( '' );
+    myFirstCollectionView.render();
+    anotherCollectionView.render();
   },
 });
 
