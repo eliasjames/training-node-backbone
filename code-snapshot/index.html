@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Your page</title>
+    <meta name="description" content="Your page">
+    <meta name="author" content="Your Name">
+    <script src="node_modules/underscore/underscore.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/backbone/backbone.js"></script>
+    <script src="backbone/first-model.js"></script>
+    <script src="backbone/first-view.js"></script>
+    <script src="backbone/first-collection.js"></script>
+    <script src="backbone/first-collection-view.js"></script>
+    <script src="backbone/static-view.js"></script>
+    <script src="backbone/first-router.js"></script>
+    <script id="first-view-template" type="text/template">
+      <ul>
+        <li> <%= firstName %> </li>
+        <li> <input value="<%= firstName %>" class="first-name" /> </li>
+        <li> 
+          <button class="remove">Remove</button> 
+        </li>
+      </ul>
+    </script>
+    <script>
+      var myFirstCollection = new FirstCollection();
+      myFirstCollection.set([
+        { firstName: 'Steve' },
+        { firstName: 'Jane' },
+        {  },
+      ]);
+      var myFirstCollectionView = new FirstCollectionView({
+        collection: myFirstCollection
+      });
+      var anotherCollection = new FirstCollection(); 
+      var anotherCollectionView = new FirstCollectionView({
+        collection: anotherCollection
+      });
+      anotherCollection.set([ 
+        { firstName: 'Ishmael' },
+        { firstName: 'Kid' },
+        { firstName: 'Luka' },
+      ]);
+    </script>
+  </head>
+	<body>
+		<h1>Your Content</h1>
+    <div class="router-content"></div>
+	</body>
+</html>
